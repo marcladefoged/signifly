@@ -124,4 +124,10 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media all and (max-width: 576px) {
+.headline {
+  font-size: 1.1rem;
+  }
+}
+
 </style>
