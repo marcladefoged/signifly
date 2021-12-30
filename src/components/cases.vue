@@ -3,7 +3,7 @@
 
 <!-- <div
 v-for="case in cases"
-:key="case.id"
+:key="case"
 />
 <p>{{ case.solution }}</p>
 <h2> {{ case.tagline}}
@@ -28,7 +28,7 @@ v-for="case in cases"
  <div id="Zaptec" class="caseframe">
      <a href="https://signifly.com/work/zaptec">
     <img src="https://www.datocms-assets.com/7718/1617869680-zap-8.png" alt="case image">
-    <p>{{ cases[1].solution }} </p>
+    <p>{{ cases[1].solution}} </p>
    <h1> {{ cases[1].tagline }} </h1> 
      </a>
 </div>
@@ -519,7 +519,7 @@ margin-right: 6vw;
 display: block;
 color: inherit;
 text-decoration: none;
-margin-bottom: 124px;
+margin-bottom: 10vw;
 max-height: 440px;
 height: 35vw;
 width: 350px;
@@ -549,23 +549,28 @@ width: 350px;
    @media all and (max-width: 576px) {
 
        .caseframe img {
-            max-height: 440px;
-            height: 40vw;
-            max-width: 650px;           
+         min-height: 255px;
+        height: 60vw;  
+        max-width: 200px;
+        margin: auto;   
+        
 
        }
         
         #cases {
             margin-top: 10vh;
             grid-template-columns: 1fr;
-            width: 10vw;
-            margin-bottom: 1rem;
+            width: 90%;
+            margin: auto;
+            margin-bottom: 3rem;
             
              }
 
         .caseframe {
             width: 60vw;
             margin-top: 5vh;
+            margin-bottom: 25vh;
+            margin-left: 15vw;
         }
 
         }

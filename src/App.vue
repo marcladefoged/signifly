@@ -103,8 +103,9 @@ export default {
           console.log(caseName)
           this.cases = signiflydata
           if (caseName !== 'All work') {
-            this.cases = this.cases.filter((cases) => {
-            return cases.solution === caseName
+            this.cases = this.cases.map((i) => {
+            this.cases = this.cases.filter ()
+            return i.solution === caseName
 
           })
           }
