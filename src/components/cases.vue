@@ -1,9 +1,17 @@
 <template>
 <div id="cases">
 
+<!-- <div
+v-for="case in cases"
+:key="case"
+/>
+<p>{{ case.solution }}</p>
+<h2> {{ case.tagline}}
+</div> -->
+
 <!-- <ul id="case-rendering">
   <li v-for="case in cases" :key="case.tagline">{{ case.tagline }}</li>
-</ul> -->
+</ul> --> 
 
 <!--  <ul>
   <li v-for="case in cases">{{ case }}</li>
@@ -20,7 +28,7 @@
  <div id="Zaptec" class="caseframe">
      <a href="https://signifly.com/work/zaptec">
     <img src="https://www.datocms-assets.com/7718/1617869680-zap-8.png" alt="case image">
-    <p>{{ cases[1].solution }} </p>
+    <p>{{ cases[1].solution}} </p>
    <h1> {{ cases[1].tagline }} </h1> 
      </a>
 </div>
@@ -437,12 +445,17 @@
 </template>
 
 <script>
+/* import signiflydata from '../signiflydata.json' */
+
+
 export default {
     name: "Case",
     props: ['cases'],
    
 data: () => {
     return {
+            
+    
             /* cases: [
             {id: 1, tagline: '7-Eleven - Rebranding convenience', solution: 'Branding', thumbnail:"https://www.datocms-assets.com/7718/1621236720-outdoor-2.jpg"},
             {id: 2, tagline: 'Zaptec - Electrifying the EV transport sector', solution: 'Website', thumbnail:"https://www.datocms-assets.com/7718/1617869680-zap-8.png"},
@@ -506,7 +519,7 @@ margin-right: 6vw;
 display: block;
 color: inherit;
 text-decoration: none;
-margin-bottom: 124px;
+margin-bottom: 10vw;
 max-height: 440px;
 height: 35vw;
 width: 350px;
@@ -536,23 +549,28 @@ width: 350px;
    @media all and (max-width: 576px) {
 
        .caseframe img {
-            max-height: 440px;
-            height: 40vw;
-            max-width: 650px;           
+         min-height: 155px;
+        height: 60vw;  
+        max-width: 300px;
+        margin: auto;   
+        
 
        }
         
         #cases {
             margin-top: 10vh;
             grid-template-columns: 1fr;
-            width: 10vw;
-            margin-bottom: 1rem;
+            margin: auto;
+            margin-bottom: 3rem;
+            margin-left: -9vw;
             
              }
 
         .caseframe {
             width: 60vw;
             margin-top: 5vh;
+            margin-bottom: 25vh;
+            margin-left: 15vw;
         }
 
         }

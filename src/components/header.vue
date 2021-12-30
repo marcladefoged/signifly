@@ -175,4 +175,10 @@ span.boo {
 .a-header a:active {
 background: #4F00CF;
 }
+
+@media all and (max-width: 576px) {
+	h1,h2 {
+		font-size: 2rem;
+	}
+}
 </style>
